@@ -116,6 +116,7 @@
         disableScroll: true,
         stopPropagation: true,
         callback: function (index, element) {
+          list[index].stop();
           setTimeout(() => {
             list[index].goToAndPlay(0, true);
           }, 200);
