@@ -105,6 +105,7 @@
       var anim4 = lottie.loadAnimation(animation4);
       var list = [anim1, anim2, anim3, anim4];
       anim1.goToAndPlay(0, true);
+
       var element = document.getElementById("slider");
       window.mySwipe = new Swipe(element, {
         startSlide: 0,
@@ -115,8 +116,9 @@
         disableScroll: true,
         stopPropagation: true,
         callback: function (index, element) {
-          list[index].stop();
-          list[index].goToAndPlay(0, true);
+          setTimeout(() => {
+            list[index].goToAndPlay(0, true);
+          }, 200);
         },
         transitionEnd: function (index, element) {},
       });
