@@ -4,7 +4,6 @@
   height: 100%;
   display: block;
   overflow: hidden;
-  transform: translate3d(0, 0, 0);
   text-align: center;
   opacity: 1;
   margin: 0 auto;
@@ -15,13 +14,15 @@
   overflow: hidden;
   visibility: hidden;
   position: relative;
-  width: 100%;
-  max-width: 500px;
-  /* border-style: solid; */
-  /* border-color: rgb(110, 110, 110, 0.3); */
-  /* border-width: 1px; */
-  margin: 0px auto;
-  padding: 100px 0px;
+  /* height: 100%; */
+  width: 500px;
+  height: 445px;
+  border-style: solid;
+  border-color: #d4d7dc;
+  border-width: 1px;
+  border-radius: 8px;
+  margin: 100px auto;
+  /* padding: 100px 0px; */
 }
 
 .swipe-wrap {
