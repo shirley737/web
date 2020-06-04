@@ -1,3 +1,14 @@
+#forward {
+  z-index: 999;
+  position: relative;
+  left: 500px;
+  top: 500px;
+}
+
+#back {
+  z-index: 999;
+}
+
 #bm1 {
   width: 100%;
   max-width: 500px;
