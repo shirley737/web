@@ -11,7 +11,7 @@
   </head>
   <body>
     <div id="slider" class="swipe" style="visibility: visible;">
-      <div class="swipe-wrap" style="width: 3150px;">
+      <div class="swipe-wrap" style="width: 2520px;">
         <div
           id="bm1"
           data-index="0"
@@ -66,20 +66,10 @@
           "
         ></div>
       </div>
-      <!-- <div id="forward">
-        <img src="forward.svg" alt="forward" />
-      </div> -->
     </div>
 
-    <!-- <div id="back">
-      <img src="back.svg" alt="back" />
-    </div> -->
-
     <script src="lottie.js" type="text/javascript"></script>
-    <script src="lottie-api-master/dist/lottie_api.js"></script>
-    <script src="lottie-api-master/dist/lottie_api.min.js"></script>
     <script src="swipe-master/build/swipe.min.js"></script>
-
     <script>
       var animation1 = {
         container: document.getElementById("bm1"),
@@ -138,7 +128,6 @@
         continuous: false,
         disableScroll: true,
         stopPropagation: true,
-        ignore: ".test",
         callback: function (index, element) {
           list[index].stop();
           setTimeout(() => {
