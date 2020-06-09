@@ -5,6 +5,10 @@
   top: 500px;
 }
 
+#text {
+  text-align: center;
+}
+
 #back {
   z-index: 999;
 }
