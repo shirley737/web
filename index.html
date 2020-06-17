@@ -123,7 +123,6 @@
       var element = document.getElementById("slider");
       window.mySwipe = new Swipe(element, {
         startSlide: 0,
-        auto: 6000,
         speed: 600,
         draggable: true,
         autoRestart: true,
@@ -134,7 +133,7 @@
           list[index].stop();
           setTimeout(() => {
             list[index].goToAndPlay(0, true);
-          }, 200);
+          }, 250);
         },
         transitionEnd: function (index, element) {},
       });
