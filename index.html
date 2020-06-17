@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tagging Prototype v1</title>
+    <title>Tagging Prototype v2</title>
   </head>
   <body>
     <div id="slider" class="swipe" style="visibility: visible;">
@@ -72,6 +72,26 @@
     <script src="lottie.js" type="text/javascript"></script>
     <script src="swipe-master/build/swipe.min.js"></script>
     <script>
+      window.mySwipe = new Swipe(document.getElementById("slider"), {
+        startSlide: 0,
+        speed: 600,
+        draggable: true,
+        autoRestart: true,
+        continuous: false,
+        disableScroll: true,
+        stopPropagation: true,
+        callback: function (index, element) {
+          document.getElementById("bm3").style.display = "inline";
+          document.getElementById("bm4").style.display = "inline";
+          document.getElementById("bm5").style.display = "inline";
+          list[index].stop();
+          setTimeout(() => {
+            list[index].goToAndPlay(0, true);
+          }, 250);
+        },
+        transitionEnd: function (index, element) {},
+      });
+
       var animation1 = {
         container: document.getElementById("bm1"),
         renderer: "svg",
@@ -86,6 +106,9 @@
         autoplay: false,
         loop: false,
         path: "tagging2.json",
+        rendererSettings: {
+          progressiveLoad: true,
+        },
       };
 
       var animation3 = {
@@ -94,6 +117,9 @@
         autoplay: false,
         loop: false,
         path: "tagging3.json",
+        rendererSettings: {
+          progressiveLoad: true,
+        },
       };
 
       var animation4 = {
@@ -102,6 +128,9 @@
         autoplay: false,
         loop: false,
         path: "tagging4.json",
+        rendererSettings: {
+          progressiveLoad: true,
+        },
       };
 
       var animation5 = {
@@ -110,6 +139,9 @@
         autoplay: false,
         loop: false,
         path: "tagging5.json",
+        rendererSettings: {
+          progressiveLoad: true,
+        },
       };
 
       var anim1 = lottie.loadAnimation(animation1);
@@ -118,24 +150,9 @@
       var anim4 = lottie.loadAnimation(animation4);
       var anim5 = lottie.loadAnimation(animation5);
       var list = [anim1, anim2, anim3, anim4, anim5];
-      anim1.goToAndPlay(0, true);
 
-      var element = document.getElementById("slider");
-      window.mySwipe = new Swipe(element, {
-        startSlide: 0,
-        speed: 600,
-        draggable: true,
-        autoRestart: true,
-        continuous: false,
-        disableScroll: true,
-        stopPropagation: true,
-        callback: function (index, element) {
-          list[index].stop();
-          setTimeout(() => {
-            list[index].goToAndPlay(0, true);
-          }, 250);
-        },
-        transitionEnd: function (index, element) {},
+      anim1.addEventListener("DOMLoaded", function () {
+        anim1.goToAndPlay(0, true);
       });
     </script>
   </body>
