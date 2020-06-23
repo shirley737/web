@@ -127,34 +127,19 @@
         transitionEnd: function (index, element) {
           document.getElementById("animation").innerHTML = "";
           if (index == 0) {
-            setTimeout(() => {
-              var anim1 = lottie.loadAnimation(animation1);
-              anim1.goToAndPlay(0, true);
-            }, 50);
+            var anim1 = lottie.loadAnimation(animation1);
           }
           if (index == 1) {
-            setTimeout(() => {
-              var anim2 = lottie.loadAnimation(animation2);
-              anim2.goToAndPlay(0, true);
-            }, 50);
+            var anim2 = lottie.loadAnimation(animation2);
           }
           if (index == 2) {
-            setTimeout(() => {
-              var anim3 = lottie.loadAnimation(animation3);
-              anim3.goToAndPlay(0, true);
-            }, 50);
+            var anim3 = lottie.loadAnimation(animation3);
           }
           if (index == 3) {
-            setTimeout(() => {
-              var anim4 = lottie.loadAnimation(animation4);
-              anim4.goToAndPlay(0, true);
-            }, 50);
+            var anim4 = lottie.loadAnimation(animation4);
           }
           if (index == 4) {
-            setTimeout(() => {
-              var anim5 = lottie.loadAnimation(animation5);
-              anim5.goToAndPlay(0, true);
-            }, 50);
+            var anim5 = lottie.loadAnimation(animation5);
           }
         },
       });
@@ -198,12 +183,6 @@
         loop: false,
         path: "tag5.json",
       };
-
-      var anim1 = lottie.loadAnimation(animation1);
-
-      anim1.addEventListener("DOMLoaded", function () {
-        anim1.goToAndPlay(0, true);
-      });
     </script>
   </body>
 </html>
