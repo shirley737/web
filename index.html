@@ -10,64 +10,107 @@
     <title>Tagging Prototype v2</title>
   </head>
   <body>
-    <div id="slider" class="swipe" style="visibility: visible;">
-      <div class="swipe-wrap" style="width: 2520px;">
-        <div
-          id="bm1"
-          data-index="0"
-          style="
-            width: 630px;
-            left: 0px;
-            transition-duration: 300ms;
-            transform: translateX(-630px);
-          "
-        ></div>
-        <div
-          id="bm2"
-          data-index="1"
-          style="
-            width: 630px;
-            left: -630px;
-            transition-duration: 300ms;
-            transform: translateX(-630px);
-          "
-        ></div>
+    <div id="main">
+      <div id="animation"></div>
+      <div id="slider" class="swipe" style="visibility: visible;">
+        <div class="swipe-wrap" style="width: 2500px;">
+          <div
+            id="bm1"
+            data-index="0"
+            style="
+              width: 500px;
+              left: 0px;
+              transition-duration: 300ms;
+              transform: translateX(-500px);
+            "
+          >
+            <img
+              alt="1"
+              src="page1.svg"
+              width="496"
+              height="165"
+              style="align-content: center;"
+            />
+          </div>
+          <div
+            id="bm2"
+            data-index="1"
+            style="
+              width: 500px;
+              left: -500px;
+              transition-duration: 300ms;
+              transform: translateX(-500px);
+            "
+          >
+            <img
+              alt="2"
+              src="page2.svg"
+              width="496"
+              height="165"
+              style="align-content: center;"
+            />
+          </div>
 
-        <div
-          id="bm3"
-          data-index="2"
-          style="
-            width: 630px;
-            left: -1260px;
-            transition-duration: 300ms;
-            transform: translateX(-630px);
-          "
-        ></div>
+          <div
+            id="bm3"
+            data-index="2"
+            style="
+              width: 500px;
+              left: -1000px;
+              transition-duration: 300ms;
+              transform: translateX(-1000px);
+            "
+          >
+            <img
+              alt="3"
+              src="page3.svg"
+              width="496"
+              height="165"
+              style="align-content: center;"
+            />
+          </div>
 
-        <div
-          id="bm4"
-          data-index="3"
-          style="
-            width: 630px;
-            left: -1890px;
-            transition-duration: 300ms;
-            transform: translateX(-630px);
-          "
-        ></div>
+          <div
+            id="bm4"
+            data-index="3"
+            style="
+              width: 500px;
+              left: -1500px;
+              transition-duration: 300ms;
+              transform: translateX(-500px);
+            "
+          >
+            <img
+              alt="4"
+              src="page4.svg"
+              width="496"
+              height="165"
+              style="align-content: center;"
+            />
+          </div>
 
-        <div
-          id="bm5"
-          data-index="4"
-          style="
-            width: 630px;
-            left: -2520px;
-            transition-duration: 300ms;
-            transform: translateX(-630px);
-          "
-        ></div>
+          <div
+            id="bm5"
+            data-index="4"
+            style="
+              width: 500px;
+              left: -2000px;
+              transition-duration: 300ms;
+              transform: translateX(-500px);
+            "
+          >
+            <img
+              alt="5"
+              src="page5.svg"
+              width="496"
+              height="165"
+              style="align-content: center;"
+            />
+          </div>
+        </div>
       </div>
+      <div id="button"><img src="btn.svg" width="106" height="36" /></div>
     </div>
-    <div id="text">To view the animation, drag the carousel left or right.</div>
 
     <script src="lottie.js" type="text/javascript"></script>
     <script src="swipe-master/build/swipe.min.js"></script>
@@ -81,75 +124,80 @@
         disableScroll: true,
         stopPropagation: true,
         callback: function (index, element) {
-          document.getElementById("bm3").style.display = "inline";
-          document.getElementById("bm4").style.display = "inline";
-          document.getElementById("bm5").style.display = "inline";
-          list[index].stop();
-          setTimeout(() => {
-            list[index].goToAndPlay(0, true);
-          }, 250);
+          // document.getElementById("bm3").style.display = "inline";
+          // document.getElementById("bm4").style.display = "inline";
+          // document.getElementById("bm5").style.display = "inline";
+          // list[index].stop();
+          // setTimeout(() => {
+          //   list[index].goToAndPlay(0, true);
+          // }, 250);
         },
-        transitionEnd: function (index, element) {},
+        transitionEnd: function (index, element) {
+          document.getElementById("animation").innerHTML = "";
+          if (index == 0) {
+            var anim1 = lottie.loadAnimation(animation1);
+            anim1.goToAndPlay(0, true);
+          }
+          if (index == 1) {
+            var anim2 = lottie.loadAnimation(animation2);
+            anim2.goToAndPlay(0, true);
+          }
+          if (index == 2) {
+            var anim3 = lottie.loadAnimation(animation3);
+            anim3.goToAndPlay(0, true);
+          }
+          if (index == 3) {
+            var anim4 = lottie.loadAnimation(animation4);
+            anim4.goToAndPlay(0, true);
+          }
+          if (index == 4) {
+            var anim5 = lottie.loadAnimation(animation5);
+            anim5.goToAndPlay(0, true);
+          }
+        },
       });
 
       var animation1 = {
-        container: document.getElementById("bm1"),
+        container: document.getElementById("animation"),
         renderer: "svg",
         autoplay: false,
         loop: false,
-        path: "tagging1.json",
+        path: "tag1.json",
       };
 
       var animation2 = {
-        container: document.getElementById("bm2"),
+        container: document.getElementById("animation"),
         renderer: "svg",
         autoplay: false,
         loop: false,
-        path: "tagging2.json",
-        rendererSettings: {
-          progressiveLoad: true,
-        },
+        path: "tag2.json",
       };
 
       var animation3 = {
-        container: document.getElementById("bm3"),
+        container: document.getElementById("animation"),
         renderer: "svg",
         autoplay: false,
         loop: false,
-        path: "tagging3.json",
-        rendererSettings: {
-          progressiveLoad: true,
-        },
+        path: "tag3.json",
       };
 
       var animation4 = {
-        container: document.getElementById("bm4"),
+        container: document.getElementById("animation"),
         renderer: "svg",
         autoplay: false,
         loop: false,
-        path: "tagging4.json",
-        rendererSettings: {
-          progressiveLoad: true,
-        },
+        path: "tag4.json",
       };
 
       var animation5 = {
-        container: document.getElementById("bm5"),
+        container: document.getElementById("animation"),
         renderer: "svg",
         autoplay: false,
         loop: false,
-        path: "tagging5.json",
-        rendererSettings: {
-          progressiveLoad: true,
-        },
+        path: "tag5.json",
       };
 
       var anim1 = lottie.loadAnimation(animation1);
-      var anim2 = lottie.loadAnimation(animation2);
-      var anim3 = lottie.loadAnimation(animation3);
-      var anim4 = lottie.loadAnimation(animation4);
-      var anim5 = lottie.loadAnimation(animation5);
-      var list = [anim1, anim2, anim3, anim4, anim5];
 
       anim1.addEventListener("DOMLoaded", function () {
         anim1.goToAndPlay(0, true);
