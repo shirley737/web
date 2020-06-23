@@ -128,18 +128,23 @@
           document.getElementById("animation").innerHTML = "";
           if (index == 0) {
             var anim1 = lottie.loadAnimation(animation1);
+            anim1.goToAndPlay(0, true);
           }
           if (index == 1) {
             var anim2 = lottie.loadAnimation(animation2);
+            anim2.goToAndPlay(0, true);
           }
           if (index == 2) {
             var anim3 = lottie.loadAnimation(animation3);
+            anim3.goToAndPlay(0, true);
           }
           if (index == 3) {
             var anim4 = lottie.loadAnimation(animation4);
+            anim4.goToAndPlay(0, true);
           }
           if (index == 4) {
             var anim5 = lottie.loadAnimation(animation5);
+            anim5.goToAndPlay(0, true);
           }
         },
       });
@@ -183,6 +188,12 @@
         loop: false,
         path: "tag5.json",
       };
+
+      var anim1 = lottie.loadAnimation(animation1);
+
+      anim1.addEventListener("DOMLoaded", function () {
+        anim1.goToAndPlay(0, true);
+      });
     </script>
   </body>
 </html>
