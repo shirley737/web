@@ -123,36 +123,38 @@
         continuous: false,
         disableScroll: true,
         stopPropagation: true,
-        callback: function (index, element) {
-          // document.getElementById("bm3").style.display = "inline";
-          // document.getElementById("bm4").style.display = "inline";
-          // document.getElementById("bm5").style.display = "inline";
-          // list[index].stop();
-          // setTimeout(() => {
-          //   list[index].goToAndPlay(0, true);
-          // }, 250);
-        },
+        callback: function (index, element) {},
         transitionEnd: function (index, element) {
           document.getElementById("animation").innerHTML = "";
           if (index == 0) {
-            var anim1 = lottie.loadAnimation(animation1);
-            anim1.goToAndPlay(0, true);
+            setTimeout(() => {
+              var anim1 = lottie.loadAnimation(animation1);
+              anim1.goToAndPlay(0, true);
+            }, 50);
           }
           if (index == 1) {
-            var anim2 = lottie.loadAnimation(animation2);
-            anim2.goToAndPlay(0, true);
+            setTimeout(() => {
+              var anim2 = lottie.loadAnimation(animation2);
+              anim2.goToAndPlay(0, true);
+            }, 50);
           }
           if (index == 2) {
-            var anim3 = lottie.loadAnimation(animation3);
-            anim3.goToAndPlay(0, true);
+            setTimeout(() => {
+              var anim3 = lottie.loadAnimation(animation3);
+              anim3.goToAndPlay(0, true);
+            }, 50);
           }
           if (index == 3) {
-            var anim4 = lottie.loadAnimation(animation4);
-            anim4.goToAndPlay(0, true);
+            setTimeout(() => {
+              var anim4 = lottie.loadAnimation(animation4);
+              anim4.goToAndPlay(0, true);
+            }, 50);
           }
           if (index == 4) {
-            var anim5 = lottie.loadAnimation(animation5);
-            anim5.goToAndPlay(0, true);
+            setTimeout(() => {
+              var anim5 = lottie.loadAnimation(animation5);
+              anim5.goToAndPlay(0, true);
+            }, 50);
           }
         },
       });

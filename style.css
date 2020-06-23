@@ -16,6 +16,7 @@
   /* background-color: antiquewhite; */
   width: 576px;
   height: 255px;
+  text-align: center;
 }
 
 #bm1 {
@@ -37,7 +38,7 @@
   /* background-color: antiquewhite; */
   width: 496px;
   height: 165px;
-  margin: 0px auto 20px auto;
+  margin: -15px auto 40px auto;
 }
 
 .swipe-wrap {
