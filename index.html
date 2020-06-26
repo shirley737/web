@@ -115,6 +115,18 @@
     <script src="lottie.js" type="text/javascript"></script>
     <script src="swipe-master/build/swipe.min.js"></script>
     <script>
+      var animation1 = {
+        container: document.getElementById("animation"),
+        renderer: "svg",
+        autoplay: false,
+        loop: false,
+        initialSegment: [0, 354],
+        path: "final.json",
+      };
+
+      var anim1 = lottie.loadAnimation(animation1);
+      anim1.play();
+
       window.mySwipe = new Swipe(document.getElementById("slider"), {
         startSlide: 0,
         speed: 600,
@@ -123,39 +135,25 @@
         continuous: false,
         disableScroll: true,
         stopPropagation: true,
-        callback: function (index, element) {},
-        transitionEnd: function (index, element) {
-          document.getElementById("animation").innerHTML = "";
+        callback: function (index, element) {
           if (index == 0) {
-            var anim1 = lottie.loadAnimation(animation1);
-            anim1.goToAndPlay(0, true);
+            anim1.playSegments([0, 354], true);
           }
           if (index == 1) {
-            var anim2 = lottie.loadAnimation(animation2);
-            anim2.goToAndPlay(0, true);
+            anim1.playSegments([355, 583], true);
           }
           if (index == 2) {
-            var anim3 = lottie.loadAnimation(animation3);
-            anim3.goToAndPlay(0, true);
+            anim1.playSegments([584, 943], true);
           }
           if (index == 3) {
-            var anim4 = lottie.loadAnimation(animation4);
-            anim4.goToAndPlay(0, true);
+            anim1.playSegments([944, 1152], true);
           }
           if (index == 4) {
-            var anim5 = lottie.loadAnimation(animation5);
-            anim5.goToAndPlay(0, true);
+            anim1.playSegments([1153, 1452], true);
           }
         },
+        transitionEnd: function (index, element) {},
       });
-
-      var animation1 = {
-        container: document.getElementById("animation"),
-        renderer: "svg",
-        autoplay: false,
-        loop: false,
-        path: "tag1.json",
-      };
 
       var animation2 = {
         container: document.getElementById("animation"),
@@ -189,11 +187,11 @@
         path: "tag5.json",
       };
 
-      var anim1 = lottie.loadAnimation(animation1);
+      // var anim1 = lottie.loadAnimation(animation1);
 
-      anim1.addEventListener("DOMLoaded", function () {
-        anim1.goToAndPlay(0, true);
-      });
+      // anim1.addEventListener("DOMLoaded", function () {
+      //   anim1.goToAndPlay([0, 354], false);
+      // });
     </script>
   </body>
 </html>
