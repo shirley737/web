@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="496px" height="165px" viewBox="0 0 496 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 3</title>
-    <defs>
-        <circle id="path-1" cx="4" cy="4" r="4"></circle>
-    </defs>
-    <g id="Visual-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Colors" transform="translate(-60.000000, -6322.000000)">
-            <g id="04---3btns-with-Image-Copy-8" transform="translate(0.000000, 6063.000000)">
-                <g id="Group" transform="translate(20.000000, 20.000000)">
-                    <g id="Group-3" transform="translate(40.000000, 239.000000)">
-                        <rect id="Rectangle" fill="#FFFFFF" x="5" y="0" width="486" height="165"></rect>
-                        <text id="Tags-just-got-more-c" fill="#393A3D" font-family="AvenirNextforINTUIT-Regular, AvenirNext forINTUIT" font-size="16" font-weight="normal" line-spacing="24">
-                            <tspan x="148.52" y="61">Tags just got more colorful! </tspan>
-                            <tspan x="89.84" y="85">You asked for more colors, and we listened.</tspan>
+<svg width="356px" height="146px" viewBox="0 0 356 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ovals</title>
+    <g id="Visual-Design-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold" line-spacing="32">
+        <g id="Colors" transform="translate(-130.000000, -441.000000)" fill="#393A3D" fill-rule="nonzero">
+            <g id="04---3btns-with-Image-Copy-22" transform="translate(0.000000, 183.000000)">
+                <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                    <g id="ovals" transform="translate(110.000000, 238.000000)">
+                        <text id="Tags-just-got-more-c">
+                            <tspan x="19.996" y="23">Tags just got more colorful.</tspan>
+                            <tspan x="24.316" y="55">You asked for more colors, </tspan>
+                            <tspan x="81.868" y="87">and we listened.</tspan>
                         </text>
-                        <text id="Major-updates-to-tag" fill="#393A3D" font-family="AvenirNextforINTUIT-Bold, AvenirNext forINTUIT" font-size="24" font-weight="bold">
-                            <tspan x="99.788" y="24">Major updates to tagging</tspan>
-                        </text>
-                        <g id="ovals" transform="translate(196.000000, 137.000000)">
-                            <circle id="Oval" fill="#D4D7DC" cx="28" cy="4" r="4"></circle>
-                            <circle id="Oval-Copy-2" fill="#D4D7DC" cx="52" cy="4" r="4"></circle>
-                            <circle id="Oval-Copy-3" fill="#D4D7DC" cx="76" cy="4" r="4"></circle>
-                            <circle id="Oval-Copy-4" fill="#D4D7DC" cx="100" cy="4" r="4"></circle>
-                            <g id="Oval-Copy">
-                                <use fill="#D4D7DC" xlink:href="#path-1"></use>
-                                <use fill="#393A3D" xlink:href="#path-1"></use>
-                            </g>
-                        </g>
                     </g>
                 </g>
             </g>

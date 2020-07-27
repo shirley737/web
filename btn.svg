@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="106px" height="36px" viewBox="0 0 106 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="216px" height="36px" viewBox="0 0 216 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>btn</title>
-    <g id="Visual-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Colors" transform="translate(-255.000000, -6527.000000)">
-            <g id="04---3btns-with-Image-Copy-8" transform="translate(0.000000, 6063.000000)">
-                <g id="Group" transform="translate(20.000000, 20.000000)">
-                    <g id="btn" transform="translate(235.000000, 444.000000)">
-                        <path d="M18,0 L88,0 C97.941125,0 106,8.058875 106,18 C106,27.941125 97.941125,36 88,36 L18,36 C8.058875,36 2.13162821e-14,27.941125 2.13162821e-14,18 C2.13162821e-14,8.058875 8.058875,0 18,0 Z" id="Primary-button" fill="#2CA01C" fill-rule="nonzero"></path>
-                        <g id="✏️-Primary-Label" transform="translate(24.000000, 9.000000)" fill="#FFFFFF" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="16" font-weight="400">
-                            <text id="Primary">
-                                <tspan x="0.528" y="15">Primary</tspan>
-                            </text>
-                        </g>
+    <g id="Visual-Design-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Colors" transform="translate(-200.000000, -647.000000)" fill-rule="nonzero">
+            <g id="04---3btns-with-Image-Copy-22" transform="translate(0.000000, 183.000000)">
+                <g id="Group-Copy" transform="translate(20.000000, 20.000000)">
+                    <g id="btn" transform="translate(180.000000, 444.000000)">
+                        <path d="M18,0 L198,0 C207.941125,0 216,8.058875 216,18 C216,27.941125 207.941125,36 198,36 L18,36 C8.058875,36 1.42108547e-14,27.941125 1.42108547e-14,18 C1.42108547e-14,8.058875 8.058875,0 18,0 Z" id="Primary-button" fill="#2CA01C"></path>
+                        <text id="Create-your-first-gr" fill="#FFFFFF" font-family="AvenirNextforINTUIT-Demi, AvenirNext forINTUIT" font-size="16" font-weight="400">
+                            <tspan x="24.62" y="24">Create your first group</tspan>
+                        </text>
                     </g>
                 </g>
             </g>
